@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="boxContainer A">
+            <p class="sound">A</p>
+            <p class="beat">CLAP</p>
+        </div>
+        <div class="boxContainer S">
+            <p class="sound">S</p>
+            <p class="beat">HIHAT</p>
+        </div>
+        <div class="boxContainer D">
+            <p class="sound">D</p>
+            <p class="beat">KICK</p>
+        </div>
+        <div class="boxContainer F">
+            <p class="sound">F</p>
+            <p class="beat">OPENHAT</p>
+        </div>
+        <div class="boxContainer G">
+            <p class="sound">G</p>
+            <p class="beat">BOOM</p>
+        </div>
+        <div class="boxContainer H">
+            <p class="sound">H</p>
+            <p class="beat">RIDE</p>
+        </div>
+        <div class="boxContainer J">
+            <p class="sound">J</p>
+            <p class="beat">SNARE</p>
+        </div>
+        <div class="boxContainer K">
+            <p class="sound">K</p>
+            <p class="beat">TINK</p>
+        </div>
+        <div class="boxContainer L">
+            <p class="sound">L</p>
+            <p class="beat">TOM</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+
+        $(document).on('keydown', function (event) {
+
+            if (event.key === 'a') {
+                let audio = new Audio('audio/sounds_clap.wav');
+                audio.play();
+                $('.boxContainer.A').addClass('playing');
+            }
+            if (event.key === 's') {
+                let audio = new Audio('audio/sounds_hihat.wav');
+                audio.play();
+                $('.boxContainer.S').addClass('playing');
+            }
+            if (event.key === 'd') {
+                let audio = new Audio('audio/sounds_kick.wav');
+                audio.play();
+                $('.boxContainer.D').addClass('playing');
+            }
+            if (event.key === 'f') {
+                let audio = new Audio('audio/sounds_openhat.wav');
+                audio.play();
+                $('.boxContainer.F').addClass('playing');
+            }
+            if (event.key === 'g') {
+                let audio = new Audio('audio/sounds_boom.wav');
+                audio.play();
+                $('.boxContainer.G').addClass('playing');
+            }
+            if (event.key === 'h') {
+                let audio = new Audio('audio/sounds_ride.wav');
+                audio.play();
+                $('.boxContainer.H').addClass('playing');
+            }
+            if (event.key === 'j') {
+                let audio = new Audio('audio/sounds_snare.wav');
+                audio.play();
+                $('.boxContainer.J').addClass('playing');
+            }
+            if (event.key === 'k') {
+                let audio = new Audio('audio/sounds_tink.wav');
+                audio.play();
+                $('.boxContainer.K').addClass('playing');
+            }
+            if (event.key === 'l') {
+                let audio = new Audio('audio/sounds_tom.wav');
+                audio.play();
+                $('.boxContainer.L').addClass('playing');
+            }
+        });
+        $(document).on('keyup', function () {
+            $('.boxContainer').removeClass('playing');
+        });
+
+    </script>
+</body>
+
+</html>

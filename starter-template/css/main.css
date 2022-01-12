@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Kaushan Script', cursive;
+}  
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.pink {
+    color: #FF8997;
+    font-size: 60px;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+
+.logo {
+    float: left;
+    line-height: 60px;
+    margin-left: 20px;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.navMenu {
+    position: absolute;
+    top: 14px;
+    right: 700px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px;
+    font-size: 24px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FF8997;
+    border: 1px;
+}
+
+.navbar a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.cartBtn {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: black;
+    background-color: transparent;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.cartBtn:hover {
+    background-color: #FF8997;
+    border-color: #FF8997;
+    color: white;
+}
+
+.fas {
+    margin-right: 15px;
+}
+
+.phone {
+    font-size: 18px;
+    position: absolute;
+    top: 18px;
+    right: 300px;
+}
+
+.welcome {
+    background-image: url("https://js-beginners.github.io/filter-project/img/headerBcg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #FFF0C3;
+    background-blend-mode:multiply;
+    height: 520px;
+    line-height: 500px;
+}
+
+.welcome div {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.welcome a {
+    text-decoration: none;
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.welcome a:hover {
+    background-color: black;
+    color: #FF8997;
+}
+
+.about a {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.about a:hover {
+    background-color: black;
+    color: #FF8997;
+}
+
+.about p {
+    color:#838383;
+}
+
+.about {
+    padding: 40px;
+}
+
+.aboutPane {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.text {
+    display: inline-block;
+    width: 400px;
+    text-align: left;
+    vertical-align: top;
+    margin: 20px 25px;
+}
+
+.about img {
+    height: 400px;
+    margin: 20px 25px;
+}
+
+.imgPane {
+    display: inline-block;
+    position: relative;
+}
+
+/* .imgPane::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid pink;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+} */
+
+.ourStore {
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 40px;
+}
+
+.ourStore h1 {
+    padding-top: 30px;
+    margin: 0;
+}
+
+.category {
+    display: inline-block;
+}
+
+.ourStore a {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+
+.ourStore a:hover {
+    background-color: black;
+    color: #FF8997;
+}
+
+.menu {
+    display: inline-block;
+    background-color: white;
+    margin: 15px;
+}
+
+.menu img {
+    width: 300px;
+    display: block;
+    transform: scale(1.0);
+    transition: 1s;
+}
+
+.menu img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.scale {
+    overflow: hidden;
+}
+
+.menu h3 {
+    display: inline-block;
+}
+
+.name {
+    margin-left: 20px;
+    float: left;
+}
+
+.cost {
+    margin-right: 20px;
+    float: right;
+}
